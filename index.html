@@ -79,7 +79,7 @@
         />
         <title>Celo Bank</title>
     </head>
-    <body style="height: 1000px">
+    <body>
         <!-- Header -->
         <header class="header">
             <div class="container">
@@ -153,46 +153,376 @@
                 </div>
             </div>
         </header>
-        <!-- Hero -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero__inner">
-                    <section class="hero__content">
-                        <p class="section__tag">Digital Smart Wallet</p>
-                        <h1 class="hero__heading"
-                            >Digital <span class="highlight highlight--primary">Payment</span> For
-                            Everyone.</h1
-                        >
-                        <p class="hero__desc">
-                            We bring together everything that’s required to build websites and apps
-                            that accept payments and send payouts globally. We are the best
-                            platform.
-                        </p>
-                        <form
-                            method=""
-                            class="hero__submit"
-                        >
-                            <input
-                                type="email"
-                                class="hero__input"
-                                placeholder="Your email address"
+
+        <!-- Main -->
+        <main style="height: 5000px">
+            <!-- Hero -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__inner">
+                        <section class="hero__content">
+                            <p class="section__tag">Digital Smart Wallet</p>
+                            <h1 class="hero__heading"
+                                >Digital
+                                <span class="highlight highlight--primary">Payment</span> For
+                                Everyone.</h1
+                            >
+                            <p class="hero__desc">
+                                We bring together everything that’s required to build websites and
+                                apps that accept payments and send payouts globally. We are the best
+                                platform.
+                            </p>
+                            <form
+                                method=""
+                                class="hero__submit"
+                            >
+                                <input
+                                    type="email"
+                                    class="hero__input"
+                                    placeholder="Your email address"
+                                />
+                                <button class="btn btn--primary hero__btn">Get Started</button>
+                            </form>
+                            <p class="hero__sub-desc">
+                                *We’ll respect the inbox and never share your email.
+                            </p>
+                        </section>
+                        <div class="hero__media">
+                            <div class="phone">
+                                <!-- phone frame -->
+                                <div class="phone__frame">
+                                    <!-- visa card -->
+                                    <div class="visa-card">
+                                        <div class="card__header">
+                                            <p class="card-text">Main Balance</p>
+                                            <img
+                                                src="./assets/img/icon/visa-circles.svg"
+                                                alt=""
+                                                class="visa-circles"
+                                            />
+                                        </div>
+                                        <p class="visa__balance">$78,355.17</p>
+                                        <div class="visa-info">
+                                            <p class="visa-info__title">VALID THUR</p>
+                                            <p class="visa-info__title">CARD HOLDER</p>
+                                            <p class="visa-info__desc">08/22</p>
+                                            <p class="visa-info__desc">Md Moshqur Alam</p>
+                                        </div>
+
+                                        <!-- decoration visa card -->
+                                        <img
+                                            src="./assets/img/icon/visa-left-icon.svg"
+                                            alt=""
+                                            class="visa__decor visa__decor--left"
+                                        />
+                                        <img
+                                            src="./assets/img/icon/visa-right-icon.svg"
+                                            alt=""
+                                            class="visa__decor visa__decor--right"
+                                        />
+                                    </div>
+                                    <div class="phone__wrap-up">
+                                        <p class="phone__transaction"> Transactions </p>
+                                        <svg
+                                            width="14"
+                                            height="12"
+                                            viewBox="0 0 14 12"
+                                            fill="none"
+                                            class="phone__Transaction-icon"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <rect
+                                                width="14"
+                                                height="2"
+                                                rx="1"
+                                                fill="#31456A"
+                                            />
+                                            <rect
+                                                x="3"
+                                                y="5"
+                                                width="8"
+                                                height="2"
+                                                rx="1"
+                                                fill="#31456A"
+                                            />
+                                            <rect
+                                                x="5"
+                                                y="10"
+                                                width="4"
+                                                height="2"
+                                                rx="1"
+                                                fill="#31456A"
+                                            />
+                                        </svg>
+                                    </div>
+
+                                    <!-- phone service -->
+                                    <div class="phone__service">
+                                        <!-- card 1 -->
+                                        <div class="service-card">
+                                            <figure class="service-card__icon icon__income--blue">
+                                                <svg
+                                                    width="20"
+                                                    height="20"
+                                                    viewBox="0 0 20 20"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M11.7909 9.8946C14.5188 9.8946 16.7378 7.67523 16.7378 4.9473C16.7378 2.21937 14.5188 0 11.7909 0C9.06294 0 6.84357 2.21937 6.84357 4.9473C6.84357 7.67523 9.06294 9.8946 11.7909 9.8946ZM11.205 2.03931V1.90494C11.205 1.58114 11.4671 1.31905 11.7909 1.31905C12.1143 1.31905 12.3768 1.58114 12.3768 1.90494V2.04009C13.074 2.18969 13.5986 2.81074 13.5986 3.55209C13.5986 3.8755 13.3361 4.13798 13.0127 4.13798C12.6889 4.13798 12.4268 3.8755 12.4268 3.55209C12.4268 3.34546 12.2584 3.17712 12.0518 3.17712H11.5264C11.3198 3.17712 11.1515 3.34546 11.1515 3.55209C11.1515 3.67044 11.2081 3.78293 11.3034 3.85324L11.7909 4.21415L12.9752 5.09065C13.3642 5.37852 13.5986 5.83903 13.6017 6.32337V6.32884C13.6044 6.74209 13.4462 7.13191 13.1556 7.42603C12.94 7.64437 12.6705 7.79085 12.3768 7.85256V7.98966C12.3768 8.31347 12.1143 8.57556 11.7909 8.57556C11.4671 8.57556 11.205 8.31347 11.205 7.98966V7.85451C10.9191 7.79358 10.6562 7.65297 10.4437 7.44283C10.1496 7.15261 9.98631 6.76514 9.98397 6.35189C9.98201 6.02847 10.2425 5.76443 10.566 5.76248H10.5699C10.8917 5.76248 11.1538 6.02261 11.1558 6.34486C11.1565 6.54707 11.3192 6.71749 11.5327 6.71749C11.8564 6.71553 11.7358 6.71624 12.0573 6.71436C12.2652 6.71272 12.4315 6.54394 12.4299 6.33665V6.33119C12.4291 6.21401 12.3725 6.1023 12.2779 6.03238L11.7909 5.67186L10.6062 4.79536C10.214 4.50476 9.97967 4.03994 9.97967 3.55209C9.97967 2.80917 10.5058 2.18773 11.205 2.03931Z"
+                                                        fill="currentcolor"
+                                                    />
+                                                    <path
+                                                        d="M3.77472 12.7097C3.62454 12.4494 3.29093 12.3588 3.02896 12.5099L0.272981 14.1008C0.0120231 14.2519 -0.0775017 14.5856 0.0731515 14.8469L2.8899 19.7256C3.04067 19.9864 3.37424 20.076 3.63567 19.9254L6.39164 18.3341C6.65299 18.1834 6.74217 17.8496 6.59147 17.5883L3.77472 12.7097Z"
+                                                        fill="currentcolor"
+                                                    />
+                                                    <path
+                                                        d="M19.5664 11.7359C19.3012 11.3675 18.788 11.2843 18.42 11.5496C17.3037 12.3538 15.1601 13.8982 14.9898 14.0213C14.9113 14.0881 14.8289 14.1486 14.743 14.2021C14.4059 14.4142 14.0149 14.5275 13.6067 14.5275H10.8003C10.4769 14.5275 10.2144 14.2654 10.2144 13.9416C10.2144 13.6174 10.4772 13.3557 10.8003 13.3557H13.8016C14.2426 13.3557 14.5957 12.9885 14.5773 12.5468C14.5602 12.1276 14.2024 11.8027 13.7829 11.8027H11.4983C11.3436 11.639 11.1741 11.489 10.9924 11.355C10.3679 10.8945 9.59606 10.6223 8.76057 10.6223C7.27513 10.6223 5.79711 11.5582 5.18427 12.8073L7.58097 16.9582H12.0767C12.9595 16.9582 13.829 16.7324 14.5941 16.2922C14.8594 16.1399 15.1433 15.9567 15.4511 15.7356C16.7409 14.8091 19.3778 12.8842 19.3797 12.8831C19.7485 12.6182 19.832 12.1042 19.5664 11.7359Z"
+                                                        fill="currentcolor"
+                                                    />
+                                                </svg>
+                                            </figure>
+                                            <div class="service-card__info">
+                                                <p class="service-card__title">Received Money</p>
+                                                <p class="service-card__desc">email@gmail.com</p>
+                                            </div>
+
+                                            <div class="service-card__data">
+                                                <p class="service-card__title">+$1,600</p>
+                                                <p class="service-card__desc">Sep 23</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- card 2 -->
+                                        <div class="service-card">
+                                            <figure class="service-card__icon icon__plane--red">
+                                                <svg
+                                                    width="20"
+                                                    height="20"
+                                                    viewBox="0 0 20 20"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M7.29138 14.6757V18.5404C7.29138 18.8104 7.4647 19.0495 7.72135 19.1345C7.78551 19.1553 7.85134 19.1653 7.91634 19.1653C8.11132 19.1653 8.29964 19.0737 8.41963 18.9104L10.6803 15.8339L7.29138 14.6757Z"
+                                                        fill="currentcolor"
+                                                    />
+                                                    <path
+                                                        d="M19.7361 0.115899C19.5445 -0.0199247 19.2928 -0.0382567 19.0845 0.0709021L0.335846 9.86187C0.114196 9.97769 -0.0166284 10.2143 0.00170361 10.4635C0.0208689 10.7135 0.18669 10.9268 0.422507 11.0076L5.63463 12.7892L16.7347 3.29817L8.14529 13.6466L16.8805 16.6322C16.9455 16.6539 17.0138 16.6655 17.0821 16.6655C17.1955 16.6655 17.308 16.6347 17.4071 16.5747C17.5654 16.4781 17.6729 16.3156 17.7004 16.1331L19.9919 0.717522C20.0261 0.484206 19.9278 0.252556 19.7361 0.115899Z"
+                                                        fill="currentcolor"
+                                                    />
+                                                </svg>
+                                            </figure>
+                                            <div class="service-card__info">
+                                                <p class="service-card__title">Send Money</p>
+                                                <p class="service-card__desc">Airbnb Payment</p>
+                                            </div>
+
+                                            <div class="service-card__data">
+                                                <p class="service-card__title">- $600</p>
+                                                <p class="service-card__desc">Sep 23</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- card 3 -->
+                                        <div class="service-card">
+                                            <figure class="service-card__icon icon__income--green">
+                                                <svg
+                                                    width="20"
+                                                    height="20"
+                                                    viewBox="0 0 20 20"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M11.7909 9.8946C14.5188 9.8946 16.7378 7.67523 16.7378 4.9473C16.7378 2.21937 14.5188 0 11.7909 0C9.06294 0 6.84357 2.21937 6.84357 4.9473C6.84357 7.67523 9.06294 9.8946 11.7909 9.8946ZM11.205 2.03931V1.90494C11.205 1.58114 11.4671 1.31905 11.7909 1.31905C12.1143 1.31905 12.3768 1.58114 12.3768 1.90494V2.04009C13.074 2.18969 13.5986 2.81074 13.5986 3.55209C13.5986 3.8755 13.3361 4.13798 13.0127 4.13798C12.6889 4.13798 12.4268 3.8755 12.4268 3.55209C12.4268 3.34546 12.2584 3.17712 12.0518 3.17712H11.5264C11.3198 3.17712 11.1515 3.34546 11.1515 3.55209C11.1515 3.67044 11.2081 3.78293 11.3034 3.85324L11.7909 4.21415L12.9752 5.09065C13.3642 5.37852 13.5986 5.83903 13.6017 6.32337V6.32884C13.6044 6.74209 13.4462 7.13191 13.1556 7.42603C12.94 7.64437 12.6705 7.79085 12.3768 7.85256V7.98966C12.3768 8.31347 12.1143 8.57556 11.7909 8.57556C11.4671 8.57556 11.205 8.31347 11.205 7.98966V7.85451C10.9191 7.79358 10.6562 7.65297 10.4437 7.44283C10.1496 7.15261 9.98631 6.76514 9.98397 6.35189C9.98201 6.02847 10.2425 5.76443 10.566 5.76248H10.5699C10.8917 5.76248 11.1538 6.02261 11.1558 6.34486C11.1565 6.54707 11.3192 6.71749 11.5327 6.71749C11.8564 6.71553 11.7358 6.71624 12.0573 6.71436C12.2652 6.71272 12.4315 6.54394 12.4299 6.33665V6.33119C12.4291 6.21401 12.3725 6.1023 12.2779 6.03238L11.7909 5.67186L10.6062 4.79536C10.214 4.50476 9.97967 4.03994 9.97967 3.55209C9.97967 2.80917 10.5058 2.18773 11.205 2.03931Z"
+                                                        fill="currentcolor"
+                                                    />
+                                                    <path
+                                                        d="M3.77472 12.7097C3.62454 12.4494 3.29093 12.3588 3.02896 12.5099L0.272981 14.1008C0.0120231 14.2519 -0.0775017 14.5856 0.0731515 14.8469L2.8899 19.7256C3.04067 19.9864 3.37424 20.076 3.63567 19.9254L6.39164 18.3341C6.65299 18.1834 6.74217 17.8496 6.59147 17.5883L3.77472 12.7097Z"
+                                                        fill="currentcolor"
+                                                    />
+                                                    <path
+                                                        d="M19.5664 11.7359C19.3012 11.3675 18.788 11.2843 18.42 11.5496C17.3037 12.3538 15.1601 13.8982 14.9898 14.0213C14.9113 14.0881 14.8289 14.1486 14.743 14.2021C14.4059 14.4142 14.0149 14.5275 13.6067 14.5275H10.8003C10.4769 14.5275 10.2144 14.2654 10.2144 13.9416C10.2144 13.6174 10.4772 13.3557 10.8003 13.3557H13.8016C14.2426 13.3557 14.5957 12.9885 14.5773 12.5468C14.5602 12.1276 14.2024 11.8027 13.7829 11.8027H11.4983C11.3436 11.639 11.1741 11.489 10.9924 11.355C10.3679 10.8945 9.59606 10.6223 8.76057 10.6223C7.27513 10.6223 5.79711 11.5582 5.18427 12.8073L7.58097 16.9582H12.0767C12.9595 16.9582 13.829 16.7324 14.5941 16.2922C14.8594 16.1399 15.1433 15.9567 15.4511 15.7356C16.7409 14.8091 19.3778 12.8842 19.3797 12.8831C19.7485 12.6182 19.832 12.1042 19.5664 11.7359Z"
+                                                        fill="currentcolor"
+                                                    />
+                                                </svg>
+                                            </figure>
+                                            <div class="service-card__info">
+                                                <p class="service-card__title">Received Money</p>
+                                                <p class="service-card__desc">Upwork Earning</p>
+                                            </div>
+
+                                            <div class="service-card__data">
+                                                <p class="service-card__title">+$1,600</p>
+                                                <p class="service-card__desc">Sep 23</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- card 4 -->
+                                        <div class="service-card">
+                                            <figure class="service-card__icon icon__wallet--purple">
+                                                <svg
+                                                    width="20"
+                                                    height="19"
+                                                    viewBox="0 0 20 19"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M14.3905 3.3404L12.6214 0.309785C12.5373 0.165628 12.399 0.060636 12.2373 0.0189723C12.0765 -0.0210248 11.904 0.00230683 11.7607 0.088134L6.35272 3.3329L14.3905 3.3404Z"
+                                                        fill="#7264D6"
+                                                    />
+                                                    <path
+                                                        d="M2.49982 4.16616C2.04152 4.16616 1.66655 3.79119 1.66655 3.33289C1.66655 2.87459 2.04152 2.49962 2.49982 2.49962H5.30795L8.09109 0.833069H2.49982C1.26658 0.833069 0.241649 1.733 0.0416637 2.91625C0.0249982 2.98291 0 3.04958 0 3.12457V15.832C0 17.2069 1.12492 18.3318 2.49982 18.3318H16.6655C17.5821 18.3318 18.332 17.5819 18.332 16.6653V14.9987H16.2488C14.1823 14.9987 12.4991 13.3155 12.4991 11.249C12.4991 9.18247 14.1823 7.49926 16.2488 7.49926H18.332V5.83271C18.332 4.91611 17.5821 4.16616 16.6655 4.16616H2.49982ZM15.8322 2.49962C15.8322 1.65801 15.2072 0.95806 14.3906 0.849734L15.8322 3.33289V2.49962Z"
+                                                        fill="currentcolor"
+                                                    />
+                                                    <path
+                                                        d="M19.3735 8.74915H16.2487C14.8705 8.74915 13.7489 9.87073 13.7489 11.249C13.7489 12.6272 14.8705 13.7488 16.2487 13.7488H19.3735C19.7185 13.7488 19.9985 13.4688 19.9985 13.1238V9.3741C19.9985 9.02913 19.7185 8.74915 19.3735 8.74915ZM16.2487 12.0822C15.7888 12.0822 15.4154 11.7089 15.4154 11.249C15.4154 10.789 15.7888 10.4157 16.2487 10.4157C16.7087 10.4157 17.082 10.789 17.082 11.249C17.082 11.7089 16.7087 12.0822 16.2487 12.0822Z"
+                                                        fill="currentcolor"
+                                                    />
+                                                </svg>
+                                            </figure>
+                                            <div class="service-card__info">
+                                                <p class="service-card__title">Pay Bill</p>
+                                                <p class="service-card__desc">Electricity Bill</p>
+                                            </div>
+
+                                            <div class="service-card__data">
+                                                <p class="service-card__title">- $600</p>
+                                                <p class="service-card__desc">Sep 23</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="phone__deposit">
+                                    <img
+                                        src="./assets/img/icon/download.svg"
+                                        alt=""
+                                        class="deposit__icon"
+                                    />
+                                    <p class="deposit__text">Deposit</p>
+                                    <p class="deposit__cash">$32000</p>
+                                </div>
+                                <div class="phone__secure-fund">
+                                    <img
+                                        src="./assets/img/icon/shield.svg"
+                                        alt=""
+                                        class="secure__icon"
+                                    />
+                                    <div class="secure__content">
+                                        <p class="secure__cash">$1.310</p>
+                                        <p class="secure__text">SECURED FUNDS</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media-interest">
+                                <span class="media-interest__num"> 0% </span>
+                                <span class="media-interest__text">Interest</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- How it work -->
+            <section class="work">
+                <div class="container">
+                    <div class="work__inner">
+                        <figure class="work__media">
+                            <img
+                                src="./assets/img/how-it-work.png"
+                                alt=""
+                                class="work__img"
                             />
-                            <button class="btn btn--primary hero__btn">Get Started</button>
-                        </form>
-                        <p class="hero__sub-desc">
-                            *We’ll respect the inbox and never share your email.
-                        </p>
-                    </section>
-                    <div class="hero__media">
-                        <div class="phone">
-                            <!-- phone frame -->
-                            <div class="phone__frame">
-                                <!-- visa card -->
-                                <div class="visa-card">
+                            <img
+                                src="./assets/img/how-it-work-logo.svg"
+                                alt=""
+                                class="work__logo"
+                            />
+                            <div class="work-congratulation">
+                                <img
+                                    src="./assets/img/icon/congratulation-icon.svg"
+                                    alt=""
+                                    class="work-congratulation__icon"
+                                />
+                                <div class="work-congratulation__content">
+                                    <p class="work-congratulation__title"> Congratulations </p>
+                                    <p class="work-congratulation__desc">
+                                        Your account activated
+                                    </p>
+                                </div>
+                            </div>
+                        </figure>
+                        <section class="work__content">
+                            <p class="section__tag">Digital Smart Wallet</p>
+                            <h2 class="section__heading work__heading"> How It Works </h2>
+                            <ol class="work-list">
+                                <!-- Item 1 -->
+                                <li class="work-item">
+                                    <h3 class="work-item__title">
+                                        Open a High Interest Checking account
+                                    </h3>
+                                    <p class="work-item__desc">
+                                        Fund your bank account with a minimum balance of $100.
+                                        Enroll in 3 minutes or less!
+                                    </p>
+                                </li>
+
+                                <!-- Item 2 -->
+                                <li class="work-item">
+                                    <h3 class="work-item__title">
+                                        10 point-of-sale transactions each Month that are at least
+                                        $10 each.
+                                    </h3>
+                                    <p class="work-item__desc">
+                                        Be sure to use your rewards checking account as often as
+                                        possible in order to accrue APY
+                                    </p>
+                                </li>
+                                <li class="work-item">
+                                    <h3 class="work-item__title"> Receive up to 5.50% APY </h3>
+                                    <p class="work-item__desc">
+                                        The APY you earn will be based on your account balance and
+                                        satisfying the transaction requirement.
+                                    </p>
+                                </li>
+                            </ol>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+            <!-- one card -->
+            <section class="one-card">
+                <div class="container">
+                    <div class="one-card__inner">
+                        <section class="feature__content">
+                            <p class="section__tag">Digital Smart Wallet</p>
+                            <h2 class="section__heading feature__heading">
+                                One Card For All Your Payments
+                            </h2>
+                            <p class="feature__desc">
+                                We bring together everything that’s required to build websites and
+                                apps that accept payments and send payouts globally. We are the best
+                                platform.
+                            </p>
+                            <ul class="content-list feature__list">
+                                <li class="content-item">Global Payments</li>
+                                <li class="content-item">One-Click Purchase</li>
+                                <li class="content-item">Friendly Price</li>
+                            </ul>
+                            <button class="btn feature__btn">Get Started</button>
+                        </section>
+                        <!-- media -->
+                        <div class="one-card__media">
+                            <!-- visa card -->
+                            <div class="one-card__visa-wrap">
+                                <div class="visa-card visa-card--large">
                                     <div class="card__header">
                                         <p class="card-text">Main Balance</p>
                                         <img
-                                            src="./assets/img/icon/visa-circles.svg"
+                                            src="./assets/img/icon/visa-circles--large.svg"
                                             alt=""
                                             class="visa-circles"
                                         />
@@ -207,495 +537,317 @@
 
                                     <!-- decoration visa card -->
                                     <img
-                                        src="./assets/img/icon/visa-left-icon.svg"
+                                        src="./assets/img/icon/visa-left-icon--large.svg"
                                         alt=""
                                         class="visa__decor visa__decor--left"
                                     />
                                     <img
-                                        src="./assets/img/icon/visa-right-icon.svg"
+                                        src="./assets/img/icon/visa-right-icon--large.svg"
                                         alt=""
                                         class="visa__decor visa__decor--right"
                                     />
                                 </div>
-                                <div class="phone__wrap-up">
-                                    <p class="phone__transaction"> Transactions </p>
-                                    <svg
-                                        width="14"
-                                        height="12"
-                                        viewBox="0 0 14 12"
-                                        fill="none"
-                                        class="phone__Transaction-icon"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <rect
-                                            width="14"
-                                            height="2"
-                                            rx="1"
-                                            fill="#31456A"
-                                        />
-                                        <rect
-                                            x="3"
-                                            y="5"
-                                            width="8"
-                                            height="2"
-                                            rx="1"
-                                            fill="#31456A"
-                                        />
-                                        <rect
-                                            x="5"
-                                            y="10"
-                                            width="4"
-                                            height="2"
-                                            rx="1"
-                                            fill="#31456A"
-                                        />
-                                    </svg>
-                                </div>
 
-                                <!-- phone service -->
-                                <div class="phone__service">
-                                    <!-- card 1 -->
-                                    <div class="service-card">
-                                        <figure class="service-card__icon icon__income--blue">
-                                            <svg
-                                                width="20"
-                                                height="20"
-                                                viewBox="0 0 20 20"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <path
-                                                    d="M11.7909 9.8946C14.5188 9.8946 16.7378 7.67523 16.7378 4.9473C16.7378 2.21937 14.5188 0 11.7909 0C9.06294 0 6.84357 2.21937 6.84357 4.9473C6.84357 7.67523 9.06294 9.8946 11.7909 9.8946ZM11.205 2.03931V1.90494C11.205 1.58114 11.4671 1.31905 11.7909 1.31905C12.1143 1.31905 12.3768 1.58114 12.3768 1.90494V2.04009C13.074 2.18969 13.5986 2.81074 13.5986 3.55209C13.5986 3.8755 13.3361 4.13798 13.0127 4.13798C12.6889 4.13798 12.4268 3.8755 12.4268 3.55209C12.4268 3.34546 12.2584 3.17712 12.0518 3.17712H11.5264C11.3198 3.17712 11.1515 3.34546 11.1515 3.55209C11.1515 3.67044 11.2081 3.78293 11.3034 3.85324L11.7909 4.21415L12.9752 5.09065C13.3642 5.37852 13.5986 5.83903 13.6017 6.32337V6.32884C13.6044 6.74209 13.4462 7.13191 13.1556 7.42603C12.94 7.64437 12.6705 7.79085 12.3768 7.85256V7.98966C12.3768 8.31347 12.1143 8.57556 11.7909 8.57556C11.4671 8.57556 11.205 8.31347 11.205 7.98966V7.85451C10.9191 7.79358 10.6562 7.65297 10.4437 7.44283C10.1496 7.15261 9.98631 6.76514 9.98397 6.35189C9.98201 6.02847 10.2425 5.76443 10.566 5.76248H10.5699C10.8917 5.76248 11.1538 6.02261 11.1558 6.34486C11.1565 6.54707 11.3192 6.71749 11.5327 6.71749C11.8564 6.71553 11.7358 6.71624 12.0573 6.71436C12.2652 6.71272 12.4315 6.54394 12.4299 6.33665V6.33119C12.4291 6.21401 12.3725 6.1023 12.2779 6.03238L11.7909 5.67186L10.6062 4.79536C10.214 4.50476 9.97967 4.03994 9.97967 3.55209C9.97967 2.80917 10.5058 2.18773 11.205 2.03931Z"
-                                                    fill="currentcolor"
-                                                />
-                                                <path
-                                                    d="M3.77472 12.7097C3.62454 12.4494 3.29093 12.3588 3.02896 12.5099L0.272981 14.1008C0.0120231 14.2519 -0.0775017 14.5856 0.0731515 14.8469L2.8899 19.7256C3.04067 19.9864 3.37424 20.076 3.63567 19.9254L6.39164 18.3341C6.65299 18.1834 6.74217 17.8496 6.59147 17.5883L3.77472 12.7097Z"
-                                                    fill="currentcolor"
-                                                />
-                                                <path
-                                                    d="M19.5664 11.7359C19.3012 11.3675 18.788 11.2843 18.42 11.5496C17.3037 12.3538 15.1601 13.8982 14.9898 14.0213C14.9113 14.0881 14.8289 14.1486 14.743 14.2021C14.4059 14.4142 14.0149 14.5275 13.6067 14.5275H10.8003C10.4769 14.5275 10.2144 14.2654 10.2144 13.9416C10.2144 13.6174 10.4772 13.3557 10.8003 13.3557H13.8016C14.2426 13.3557 14.5957 12.9885 14.5773 12.5468C14.5602 12.1276 14.2024 11.8027 13.7829 11.8027H11.4983C11.3436 11.639 11.1741 11.489 10.9924 11.355C10.3679 10.8945 9.59606 10.6223 8.76057 10.6223C7.27513 10.6223 5.79711 11.5582 5.18427 12.8073L7.58097 16.9582H12.0767C12.9595 16.9582 13.829 16.7324 14.5941 16.2922C14.8594 16.1399 15.1433 15.9567 15.4511 15.7356C16.7409 14.8091 19.3778 12.8842 19.3797 12.8831C19.7485 12.6182 19.832 12.1042 19.5664 11.7359Z"
-                                                    fill="currentcolor"
-                                                />
-                                            </svg>
-                                        </figure>
-                                        <div class="service-card__info">
-                                            <p class="service-card__title">Received Money</p>
-                                            <p class="service-card__desc">email@gmail.com</p>
-                                        </div>
-
-                                        <div class="service-card__data">
-                                            <p class="service-card__title">+$1,600</p>
-                                            <p class="service-card__desc">Sep 23</p>
-                                        </div>
+                                <!-- Upper-box -->
+                                <div class="one-card__upper-box">
+                                    <figure class="upper-box__icon">
+                                        <svg
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 20 20"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M7.29138 14.6757V18.5404C7.29138 18.8104 7.4647 19.0495 7.72135 19.1345C7.78551 19.1553 7.85134 19.1653 7.91634 19.1653C8.11132 19.1653 8.29964 19.0737 8.41963 18.9104L10.6803 15.8339L7.29138 14.6757Z"
+                                                fill="currentcolor"
+                                            />
+                                            <path
+                                                d="M19.7361 0.115899C19.5445 -0.0199247 19.2928 -0.0382567 19.0845 0.0709021L0.335846 9.86187C0.114196 9.97769 -0.0166284 10.2143 0.00170361 10.4635C0.0208689 10.7135 0.18669 10.9268 0.422507 11.0076L5.63463 12.7892L16.7347 3.29817L8.14529 13.6466L16.8805 16.6322C16.9455 16.6539 17.0138 16.6655 17.0821 16.6655C17.1955 16.6655 17.308 16.6347 17.4071 16.5747C17.5654 16.4781 17.6729 16.3156 17.7004 16.1331L19.9919 0.717522C20.0261 0.484206 19.9278 0.252556 19.7361 0.115899Z"
+                                                fill="currentcolor"
+                                            />
+                                        </svg>
+                                    </figure>
+                                    <div class="upper-box__info">
+                                        <p class="upper-box__title">Send Money</p>
+                                        <p class="upper-box__desc">Airbnb Payment</p>
                                     </div>
-
-                                    <!-- card 2 -->
-                                    <div class="service-card">
-                                        <figure class="service-card__icon icon__plane--red">
-                                            <svg
-                                                width="20"
-                                                height="20"
-                                                viewBox="0 0 20 20"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <path
-                                                    d="M7.29138 14.6757V18.5404C7.29138 18.8104 7.4647 19.0495 7.72135 19.1345C7.78551 19.1553 7.85134 19.1653 7.91634 19.1653C8.11132 19.1653 8.29964 19.0737 8.41963 18.9104L10.6803 15.8339L7.29138 14.6757Z"
-                                                    fill="currentcolor"
-                                                />
-                                                <path
-                                                    d="M19.7361 0.115899C19.5445 -0.0199247 19.2928 -0.0382567 19.0845 0.0709021L0.335846 9.86187C0.114196 9.97769 -0.0166284 10.2143 0.00170361 10.4635C0.0208689 10.7135 0.18669 10.9268 0.422507 11.0076L5.63463 12.7892L16.7347 3.29817L8.14529 13.6466L16.8805 16.6322C16.9455 16.6539 17.0138 16.6655 17.0821 16.6655C17.1955 16.6655 17.308 16.6347 17.4071 16.5747C17.5654 16.4781 17.6729 16.3156 17.7004 16.1331L19.9919 0.717522C20.0261 0.484206 19.9278 0.252556 19.7361 0.115899Z"
-                                                    fill="currentcolor"
-                                                />
-                                            </svg>
-                                        </figure>
-                                        <div class="service-card__info">
-                                            <p class="service-card__title">Send Money</p>
-                                            <p class="service-card__desc">Airbnb Payment</p>
-                                        </div>
-
-                                        <div class="service-card__data">
-                                            <p class="service-card__title">- $600</p>
-                                            <p class="service-card__desc">Sep 23</p>
-                                        </div>
-                                    </div>
-
-                                    <!-- card 3 -->
-                                    <div class="service-card">
-                                        <figure class="service-card__icon icon__income--green">
-                                            <svg
-                                                width="20"
-                                                height="20"
-                                                viewBox="0 0 20 20"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <path
-                                                    d="M11.7909 9.8946C14.5188 9.8946 16.7378 7.67523 16.7378 4.9473C16.7378 2.21937 14.5188 0 11.7909 0C9.06294 0 6.84357 2.21937 6.84357 4.9473C6.84357 7.67523 9.06294 9.8946 11.7909 9.8946ZM11.205 2.03931V1.90494C11.205 1.58114 11.4671 1.31905 11.7909 1.31905C12.1143 1.31905 12.3768 1.58114 12.3768 1.90494V2.04009C13.074 2.18969 13.5986 2.81074 13.5986 3.55209C13.5986 3.8755 13.3361 4.13798 13.0127 4.13798C12.6889 4.13798 12.4268 3.8755 12.4268 3.55209C12.4268 3.34546 12.2584 3.17712 12.0518 3.17712H11.5264C11.3198 3.17712 11.1515 3.34546 11.1515 3.55209C11.1515 3.67044 11.2081 3.78293 11.3034 3.85324L11.7909 4.21415L12.9752 5.09065C13.3642 5.37852 13.5986 5.83903 13.6017 6.32337V6.32884C13.6044 6.74209 13.4462 7.13191 13.1556 7.42603C12.94 7.64437 12.6705 7.79085 12.3768 7.85256V7.98966C12.3768 8.31347 12.1143 8.57556 11.7909 8.57556C11.4671 8.57556 11.205 8.31347 11.205 7.98966V7.85451C10.9191 7.79358 10.6562 7.65297 10.4437 7.44283C10.1496 7.15261 9.98631 6.76514 9.98397 6.35189C9.98201 6.02847 10.2425 5.76443 10.566 5.76248H10.5699C10.8917 5.76248 11.1538 6.02261 11.1558 6.34486C11.1565 6.54707 11.3192 6.71749 11.5327 6.71749C11.8564 6.71553 11.7358 6.71624 12.0573 6.71436C12.2652 6.71272 12.4315 6.54394 12.4299 6.33665V6.33119C12.4291 6.21401 12.3725 6.1023 12.2779 6.03238L11.7909 5.67186L10.6062 4.79536C10.214 4.50476 9.97967 4.03994 9.97967 3.55209C9.97967 2.80917 10.5058 2.18773 11.205 2.03931Z"
-                                                    fill="currentcolor"
-                                                />
-                                                <path
-                                                    d="M3.77472 12.7097C3.62454 12.4494 3.29093 12.3588 3.02896 12.5099L0.272981 14.1008C0.0120231 14.2519 -0.0775017 14.5856 0.0731515 14.8469L2.8899 19.7256C3.04067 19.9864 3.37424 20.076 3.63567 19.9254L6.39164 18.3341C6.65299 18.1834 6.74217 17.8496 6.59147 17.5883L3.77472 12.7097Z"
-                                                    fill="currentcolor"
-                                                />
-                                                <path
-                                                    d="M19.5664 11.7359C19.3012 11.3675 18.788 11.2843 18.42 11.5496C17.3037 12.3538 15.1601 13.8982 14.9898 14.0213C14.9113 14.0881 14.8289 14.1486 14.743 14.2021C14.4059 14.4142 14.0149 14.5275 13.6067 14.5275H10.8003C10.4769 14.5275 10.2144 14.2654 10.2144 13.9416C10.2144 13.6174 10.4772 13.3557 10.8003 13.3557H13.8016C14.2426 13.3557 14.5957 12.9885 14.5773 12.5468C14.5602 12.1276 14.2024 11.8027 13.7829 11.8027H11.4983C11.3436 11.639 11.1741 11.489 10.9924 11.355C10.3679 10.8945 9.59606 10.6223 8.76057 10.6223C7.27513 10.6223 5.79711 11.5582 5.18427 12.8073L7.58097 16.9582H12.0767C12.9595 16.9582 13.829 16.7324 14.5941 16.2922C14.8594 16.1399 15.1433 15.9567 15.4511 15.7356C16.7409 14.8091 19.3778 12.8842 19.3797 12.8831C19.7485 12.6182 19.832 12.1042 19.5664 11.7359Z"
-                                                    fill="currentcolor"
-                                                />
-                                            </svg>
-                                        </figure>
-                                        <div class="service-card__info">
-                                            <p class="service-card__title">Received Money</p>
-                                            <p class="service-card__desc">Upwork Earning</p>
-                                        </div>
-
-                                        <div class="service-card__data">
-                                            <p class="service-card__title">+$1,600</p>
-                                            <p class="service-card__desc">Sep 23</p>
-                                        </div>
-                                    </div>
-
-                                    <!-- card 4 -->
-                                    <div class="service-card">
-                                        <figure class="service-card__icon icon__wallet--purple">
-                                            <svg
-                                                width="20"
-                                                height="19"
-                                                viewBox="0 0 20 19"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <path
-                                                    d="M14.3905 3.3404L12.6214 0.309785C12.5373 0.165628 12.399 0.060636 12.2373 0.0189723C12.0765 -0.0210248 11.904 0.00230683 11.7607 0.088134L6.35272 3.3329L14.3905 3.3404Z"
-                                                    fill="#7264D6"
-                                                />
-                                                <path
-                                                    d="M2.49982 4.16616C2.04152 4.16616 1.66655 3.79119 1.66655 3.33289C1.66655 2.87459 2.04152 2.49962 2.49982 2.49962H5.30795L8.09109 0.833069H2.49982C1.26658 0.833069 0.241649 1.733 0.0416637 2.91625C0.0249982 2.98291 0 3.04958 0 3.12457V15.832C0 17.2069 1.12492 18.3318 2.49982 18.3318H16.6655C17.5821 18.3318 18.332 17.5819 18.332 16.6653V14.9987H16.2488C14.1823 14.9987 12.4991 13.3155 12.4991 11.249C12.4991 9.18247 14.1823 7.49926 16.2488 7.49926H18.332V5.83271C18.332 4.91611 17.5821 4.16616 16.6655 4.16616H2.49982ZM15.8322 2.49962C15.8322 1.65801 15.2072 0.95806 14.3906 0.849734L15.8322 3.33289V2.49962Z"
-                                                    fill="currentcolor"
-                                                />
-                                                <path
-                                                    d="M19.3735 8.74915H16.2487C14.8705 8.74915 13.7489 9.87073 13.7489 11.249C13.7489 12.6272 14.8705 13.7488 16.2487 13.7488H19.3735C19.7185 13.7488 19.9985 13.4688 19.9985 13.1238V9.3741C19.9985 9.02913 19.7185 8.74915 19.3735 8.74915ZM16.2487 12.0822C15.7888 12.0822 15.4154 11.7089 15.4154 11.249C15.4154 10.789 15.7888 10.4157 16.2487 10.4157C16.7087 10.4157 17.082 10.789 17.082 11.249C17.082 11.7089 16.7087 12.0822 16.2487 12.0822Z"
-                                                    fill="currentcolor"
-                                                />
-                                            </svg>
-                                        </figure>
-                                        <div class="service-card__info">
-                                            <p class="service-card__title">Pay Bill</p>
-                                            <p class="service-card__desc">Electricity Bill</p>
-                                        </div>
-
-                                        <div class="service-card__data">
-                                            <p class="service-card__title">- $600</p>
-                                            <p class="service-card__desc">Sep 23</p>
-                                        </div>
+                                    <div class="upper-box__data">
+                                        <p class="upper-box__money">- $600</p>
+                                        <p class="upper-box__desc">Sep 23</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="phone__deposit">
-                                <img
-                                    src="./assets/img/icon/download.svg"
-                                    alt=""
-                                    class="deposit__icon"
-                                />
-                                <p class="deposit__text">Deposit</p>
-                                <p class="deposit__cash">$32000</p>
-                            </div>
-                            <div class="phone__secure-fund">
-                                <img
-                                    src="./assets/img/icon/shield.svg"
-                                    alt=""
-                                    class="secure__icon"
-                                />
-                                <div class="secure__content">
-                                    <p class="secure__cash">$1.310</p>
-                                    <p class="secure__text">SECURED FUNDS</p>
+                                <!-- Lower box -->
+                                <div class="one-card__lower-box">
+                                    <figure class="lower-box__icon">
+                                        <svg
+                                            width="15"
+                                            height="15"
+                                            viewBox="0 0 15 15"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M8.53664 7.16362C10.5116 7.16362 12.1182 5.55681 12.1182 3.58181C12.1182 1.60681 10.5116 0 8.53664 0C6.56164 0 4.95483 1.60681 4.95483 3.58181C4.95483 5.55681 6.56164 7.16362 8.53664 7.16362ZM8.11246 1.47644V1.37916C8.11246 1.14473 8.30221 0.95498 8.53664 0.95498C8.77079 0.95498 8.96083 1.14473 8.96083 1.37916V1.47701C9.46561 1.58532 9.84539 2.03495 9.84539 2.57169C9.84539 2.80584 9.65536 2.99587 9.42121 2.99587C9.18678 2.99587 8.99703 2.80584 8.99703 2.57169C8.99703 2.42209 8.87514 2.30021 8.72555 2.30021H8.3452C8.1956 2.30021 8.07372 2.42209 8.07372 2.57169C8.07372 2.65737 8.11472 2.73882 8.18372 2.78972L8.53664 3.05102L9.39406 3.6856C9.67572 3.89401 9.8454 4.22742 9.84766 4.57808V4.58204C9.84964 4.88123 9.73511 5.16345 9.52471 5.37639C9.36861 5.53447 9.17349 5.64052 8.96083 5.6852V5.78446C8.96083 6.01889 8.77079 6.20864 8.53664 6.20864C8.30221 6.20864 8.11246 6.01889 8.11246 5.78446V5.68661C7.90546 5.6425 7.71514 5.54069 7.5613 5.38855C7.34836 5.17844 7.23016 4.89791 7.22846 4.59872C7.22705 4.36457 7.41567 4.17341 7.64982 4.17199H7.65264C7.88566 4.17199 8.07542 4.36033 8.07683 4.59363C8.07739 4.74003 8.19518 4.86341 8.34972 4.86341C8.5841 4.862 8.4968 4.86251 8.72951 4.86115C8.88006 4.85996 9.00045 4.73777 8.99929 4.58769V4.58373C8.99872 4.4989 8.95772 4.41802 8.88928 4.3674L8.53664 4.10639L7.67895 3.47181C7.39502 3.26141 7.22535 2.92489 7.22535 2.57169C7.22535 2.03382 7.60627 1.5839 8.11246 1.47644Z"
+                                                fill="currentcolor"
+                                            />
+                                            <path
+                                                d="M2.73287 9.20172C2.62414 9.01322 2.38261 8.94764 2.19294 9.05705L0.197636 10.2088C0.00870463 10.3182 -0.0561107 10.5598 0.0529612 10.749L2.09227 14.2811C2.20143 14.47 2.44293 14.5349 2.6322 14.4258L4.6275 13.2737C4.81672 13.1646 4.88128 12.923 4.77218 12.7338L2.73287 9.20172Z"
+                                                fill="currentcolor"
+                                            />
+                                            <path
+                                                d="M14.1661 8.49666C13.9741 8.22999 13.6025 8.16976 13.3361 8.36177C12.5279 8.94404 10.976 10.0622 10.8527 10.1513C10.7958 10.1996 10.7362 10.2435 10.674 10.2822C10.4299 10.4357 10.1468 10.5178 9.85133 10.5178H7.81949C7.58534 10.5178 7.3953 10.328 7.3953 10.0936C7.3953 9.85886 7.58562 9.66939 7.81949 9.66939H9.99244C10.3117 9.66939 10.5674 9.40357 10.5541 9.08373C10.5416 8.7803 10.2826 8.54502 9.97887 8.54502H8.32483C8.21285 8.42653 8.09012 8.31794 7.95862 8.22094C7.50644 7.88753 6.94765 7.69043 6.34276 7.69043C5.26731 7.69043 4.19724 8.36799 3.75354 9.27235L5.48874 12.2776H8.74364C9.38275 12.2776 10.0122 12.1141 10.5662 11.7954C10.7582 11.6851 10.9638 11.5525 11.1867 11.3924C12.1204 10.7216 14.0295 9.32806 14.031 9.32721C14.2979 9.13548 14.3584 8.76333 14.1661 8.49666Z"
+                                                fill="currentcolor"
+                                            />
+                                        </svg>
+                                    </figure>
+                                    <p class="lower-box__title">Income</p>
+                                    <p class="lower-box__money">$1250</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="media-interest">
-                            <span class="media-interest__num"> 0% </span>
-                            <span class="media-interest__text">Interest</span>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- How it work -->
-        <section class="work">
-            <div class="container">
-                <div class="work__inner">
-                    <figure class="work__media">
-                        <img
-                            src="./assets/img/how-it-work.png"
-                            alt=""
-                            class="work__img"
-                        />
-                        <img
-                            src="./assets/img/how-it-work-logo.svg"
-                            alt=""
-                            class="work__logo"
-                        />
-                        <div class="work-congratulation">
+            <!-- method -->
+            <section class="method">
+                <div class="container">
+                    <div class="method__inner">
+                        <figure class="method__media">
                             <img
-                                src="./assets/img/icon/congratulation-icon.svg"
+                                src="./assets/img/one-method.png"
                                 alt=""
-                                class="work-congratulation__icon"
+                                class="method__img"
                             />
-                            <div class="work-congratulation__content">
-                                <p class="work-congratulation__title"> Congratulations </p>
-                                <p class="work-congratulation__desc"> Your account activated </p>
+                            <div class="method__cash">
+                                <img
+                                    src="./assets/img/icon/cash.svg"
+                                    alt=""
+                                    class="method__cash-icon"
+                                />
                             </div>
+                            <div class="method__board">
+                                <h3 class="board__title">Choose payment method:</h3>
+                                <div class="method__group">
+                                    <div class="method__item">
+                                        <img
+                                            src="./assets/img/icon/payment-method-1.svg"
+                                            alt=""
+                                            class="method__icon-payment"
+                                        />
+                                    </div>
+                                    <div class="method__item">
+                                        <img
+                                            src="./assets/img/icon/payment-method-2.svg"
+                                            alt=""
+                                            class="method__icon-payment"
+                                        />
+                                    </div>
+                                    <div class="method__item">
+                                        <img
+                                            src="./assets/img/icon/payment-method-3.svg"
+                                            alt=""
+                                            class="method__icon-payment"
+                                        />
+                                    </div>
+                                    <div class="method__item">
+                                        <img
+                                            src="./assets/img/icon/payment-method-4.svg"
+                                            alt=""
+                                            class="method__icon-payment"
+                                        />
+                                    </div>
+                                    <div class="method__item">
+                                        <img
+                                            src="./assets/img/icon/payment-method-5.svg"
+                                            alt=""
+                                            class="method__icon-payment"
+                                        />
+                                    </div>
+                                    <div class="method__item method__add-item">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="15"
+                                            height="15"
+                                            viewBox="0 0 15 15"
+                                            fill="none"
+                                        >
+                                            <path
+                                                d="M8.5 0H6.5V6.5H0V8.5H6.5V15H8.5V8.5H15V6.5H8.5V0Z"
+                                                fill="currentcolor"
+                                            />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                        <section class="feature__content">
+                            <p class="section__tag">Digital Smart Wallet</p>
+                            <h2 class="section__heading feature__heading">
+                                Transfer and Deposit Your Money Anytime
+                            </h2>
+                            <p class="feature__desc">
+                                We bring together everything that’s required to build websites and
+                                apps that accept payments and send payouts globally. We are the best
+                                platform.
+                            </p>
+                            <ul class="content-list feature__list">
+                                <li class="content-item">Powerful App</li>
+                                <li class="content-item">Transparency And Speed</li>
+                                <li class="content-item">Multiple Use Capabilities</li>
+                            </ul>
+                            <button class="btn feature__btn">Get Started</button>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+            <!-- testimonial -->
+            <section class="testimonial">
+                <div class="container">
+                    <div class="testimonial__inner">
+                        <div class="testimonial__content">
+                            <p class="section__tag testimonial__tag">Our Testimonial</p>
+                            <h2 class="section__heading testimonial__heading">What Clients Says</h2>
+                            <p class="testimonial__desc">
+                                Read what clients says about us and about our online banking
+                                services that may inspire you
+                            </p>
                         </div>
-                    </figure>
-                    <section class="work__content">
-                        <p class="section__tag">Digital Smart Wallet</p>
-                        <h2 class="section__heading work__heading"> How It Works </h2>
-                        <ol class="work-list">
-                            <!-- Item 1 -->
-                            <li class="work-item">
-                                <h3 class="work-item__title">
-                                    Open a High Interest Checking account
-                                </h3>
-                                <p class="work-item__desc">
-                                    Fund your bank account with a minimum balance of $100. Enroll in
-                                    3 minutes or less!
-                                </p>
-                            </li>
+                        <div class="testimonial__message-wrapper">
+                            <!-- item 1 -->
+                            <div class="testimonial__item">
+                                <div class="testimonial-box">
+                                    <blockquote class="testimonial-box__message">
+                                        Fantastic platform for online banking. The best online
+                                        banking platform I have used. Payments, loans, and money
+                                        transfers have never been so much easier before. I am very
+                                        much happy about this great online bank.
+                                    </blockquote>
+                                    <div class="testimonial-box__triangle"></div>
+                                </div>
+                                <div class="testimonial__profile">
+                                    <figure class="testimonial__media">
+                                        <img
+                                            src="assets/img/reviewer/review-1.png"
+                                            alt=""
+                                            class="testimonial__avatar"
+                                        />
+                                    </figure>
+                                    <h3 class="testimonial__name">Alastair Cook</h3>
+                                    <p class="testimonial__job">Businessmen</p>
+                                </div>
+                            </div>
 
                             <!-- Item 2 -->
-                            <li class="work-item">
-                                <h3 class="work-item__title">
-                                    10 point-of-sale transactions each Month that are at least $10
-                                    each.
-                                </h3>
-                                <p class="work-item__desc">
-                                    Be sure to use your rewards checking account as often as
-                                    possible in order to accrue APY
-                                </p>
-                            </li>
-                            <li class="work-item">
-                                <h3 class="work-item__title"> Receive up to 5.50% APY </h3>
-                                <p class="work-item__desc">
-                                    The APY you earn will be based on your account balance and
-                                    satisfying the transaction requirement.
-                                </p>
-                            </li>
-                        </ol>
-                    </section>
-                </div>
-            </div>
-        </section>
-
-        <!-- one card -->
-        <section class="one-card">
-            <div class="container">
-                <div class="one-card__inner">
-                    <section class="feature__content">
-                        <p class="section__tag">Digital Smart Wallet</p>
-                        <h2 class="section__heading feature__heading">
-                            One Card For All Your Payments
-                        </h2>
-                        <p class="feature__desc">
-                            We bring together everything that’s required to build websites and apps
-                            that accept payments and send payouts globally. We are the best
-                            platform.
-                        </p>
-                        <ul class="content-list feature__list">
-                            <li class="content-item">Global Payments</li>
-                            <li class="content-item">One-Click Purchase</li>
-                            <li class="content-item">Friendly Price</li>
-                        </ul>
-                        <button class="btn feature__btn">Get Started</button>
-                    </section>
-                    <!-- media -->
-                    <div class="one-card__media">
-                        <!-- visa card -->
-                        <div class="one-card__visa-wrap">
-                            <div class="visa-card visa-card--large">
-                                <div class="card__header">
-                                    <p class="card-text">Main Balance</p>
-                                    <img
-                                        src="./assets/img/icon/visa-circles--large.svg"
-                                        alt=""
-                                        class="visa-circles"
-                                    />
+                            <div class="testimonial__item">
+                                <div class="testimonial-box">
+                                    <blockquote class="testimonial-box__message">
+                                        Fantastic platform for online banking. The best online
+                                        banking platform I have used. Payments, loans, and money
+                                        transfers have never been so much easier before. I am very
+                                        much happy about this great online bank.
+                                    </blockquote>
+                                    <div class="testimonial-box__triangle"></div>
                                 </div>
-                                <p class="visa__balance">$78,355.17</p>
-                                <div class="visa-info">
-                                    <p class="visa-info__title">VALID THUR</p>
-                                    <p class="visa-info__title">CARD HOLDER</p>
-                                    <p class="visa-info__desc">08/22</p>
-                                    <p class="visa-info__desc">Md Moshqur Alam</p>
-                                </div>
-
-                                <!-- decoration visa card -->
-                                <img
-                                    src="./assets/img/icon/visa-left-icon--large.svg"
-                                    alt=""
-                                    class="visa__decor visa__decor--left"
-                                />
-                                <img
-                                    src="./assets/img/icon/visa-right-icon--large.svg"
-                                    alt=""
-                                    class="visa__decor visa__decor--right"
-                                />
-                            </div>
-
-                            <!-- Upper-box -->
-                            <div class="one-card__upper-box">
-                                <figure class="upper-box__icon">
-                                    <svg
-                                        width="20"
-                                        height="20"
-                                        viewBox="0 0 20 20"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M7.29138 14.6757V18.5404C7.29138 18.8104 7.4647 19.0495 7.72135 19.1345C7.78551 19.1553 7.85134 19.1653 7.91634 19.1653C8.11132 19.1653 8.29964 19.0737 8.41963 18.9104L10.6803 15.8339L7.29138 14.6757Z"
-                                            fill="currentcolor"
+                                <div class="testimonial__profile">
+                                    <figure class="testimonial__media">
+                                        <img
+                                            src="assets/img/reviewer/review-2.png"
+                                            alt=""
+                                            class="testimonial__avatar"
                                         />
-                                        <path
-                                            d="M19.7361 0.115899C19.5445 -0.0199247 19.2928 -0.0382567 19.0845 0.0709021L0.335846 9.86187C0.114196 9.97769 -0.0166284 10.2143 0.00170361 10.4635C0.0208689 10.7135 0.18669 10.9268 0.422507 11.0076L5.63463 12.7892L16.7347 3.29817L8.14529 13.6466L16.8805 16.6322C16.9455 16.6539 17.0138 16.6655 17.0821 16.6655C17.1955 16.6655 17.308 16.6347 17.4071 16.5747C17.5654 16.4781 17.6729 16.3156 17.7004 16.1331L19.9919 0.717522C20.0261 0.484206 19.9278 0.252556 19.7361 0.115899Z"
-                                            fill="currentcolor"
-                                        />
-                                    </svg>
-                                </figure>
-                                <div class="upper-box__info">
-                                    <p class="upper-box__title">Send Money</p>
-                                    <p class="upper-box__desc">Airbnb Payment</p>
-                                </div>
-                                <div class="upper-box__data">
-                                    <p class="upper-box__money">- $600</p>
-                                    <p class="upper-box__desc">Sep 23</p>
+                                    </figure>
+                                    <h3 class="testimonial__name">Alastair Foaks</h3>
+                                    <p class="testimonial__job">Businessmen</p>
                                 </div>
                             </div>
-                            <!-- Lower box -->
-                            <div class="one-card__lower-box">
-                                <figure class="lower-box__icon">
-                                    <svg
-                                        width="15"
-                                        height="15"
-                                        viewBox="0 0 15 15"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M8.53664 7.16362C10.5116 7.16362 12.1182 5.55681 12.1182 3.58181C12.1182 1.60681 10.5116 0 8.53664 0C6.56164 0 4.95483 1.60681 4.95483 3.58181C4.95483 5.55681 6.56164 7.16362 8.53664 7.16362ZM8.11246 1.47644V1.37916C8.11246 1.14473 8.30221 0.95498 8.53664 0.95498C8.77079 0.95498 8.96083 1.14473 8.96083 1.37916V1.47701C9.46561 1.58532 9.84539 2.03495 9.84539 2.57169C9.84539 2.80584 9.65536 2.99587 9.42121 2.99587C9.18678 2.99587 8.99703 2.80584 8.99703 2.57169C8.99703 2.42209 8.87514 2.30021 8.72555 2.30021H8.3452C8.1956 2.30021 8.07372 2.42209 8.07372 2.57169C8.07372 2.65737 8.11472 2.73882 8.18372 2.78972L8.53664 3.05102L9.39406 3.6856C9.67572 3.89401 9.8454 4.22742 9.84766 4.57808V4.58204C9.84964 4.88123 9.73511 5.16345 9.52471 5.37639C9.36861 5.53447 9.17349 5.64052 8.96083 5.6852V5.78446C8.96083 6.01889 8.77079 6.20864 8.53664 6.20864C8.30221 6.20864 8.11246 6.01889 8.11246 5.78446V5.68661C7.90546 5.6425 7.71514 5.54069 7.5613 5.38855C7.34836 5.17844 7.23016 4.89791 7.22846 4.59872C7.22705 4.36457 7.41567 4.17341 7.64982 4.17199H7.65264C7.88566 4.17199 8.07542 4.36033 8.07683 4.59363C8.07739 4.74003 8.19518 4.86341 8.34972 4.86341C8.5841 4.862 8.4968 4.86251 8.72951 4.86115C8.88006 4.85996 9.00045 4.73777 8.99929 4.58769V4.58373C8.99872 4.4989 8.95772 4.41802 8.88928 4.3674L8.53664 4.10639L7.67895 3.47181C7.39502 3.26141 7.22535 2.92489 7.22535 2.57169C7.22535 2.03382 7.60627 1.5839 8.11246 1.47644Z"
-                                            fill="currentcolor"
+
+                            <!-- Item 3 -->
+                            <div class="testimonial__item">
+                                <div class="testimonial-box">
+                                    <blockquote class="testimonial-box__message">
+                                        Fantastic platform for online banking. The best online
+                                        banking platform I have used. Payments, loans, and money
+                                        transfers have never been so much easier before. I am very
+                                        much happy about this great online bank.
+                                    </blockquote>
+                                    <div class="testimonial-box__triangle"></div>
+                                </div>
+                                <div class="testimonial__profile">
+                                    <figure class="testimonial__media">
+                                        <img
+                                            src="assets/img/reviewer/review-1.png"
+                                            alt=""
+                                            class="testimonial__avatar"
                                         />
-                                        <path
-                                            d="M2.73287 9.20172C2.62414 9.01322 2.38261 8.94764 2.19294 9.05705L0.197636 10.2088C0.00870463 10.3182 -0.0561107 10.5598 0.0529612 10.749L2.09227 14.2811C2.20143 14.47 2.44293 14.5349 2.6322 14.4258L4.6275 13.2737C4.81672 13.1646 4.88128 12.923 4.77218 12.7338L2.73287 9.20172Z"
-                                            fill="currentcolor"
-                                        />
-                                        <path
-                                            d="M14.1661 8.49666C13.9741 8.22999 13.6025 8.16976 13.3361 8.36177C12.5279 8.94404 10.976 10.0622 10.8527 10.1513C10.7958 10.1996 10.7362 10.2435 10.674 10.2822C10.4299 10.4357 10.1468 10.5178 9.85133 10.5178H7.81949C7.58534 10.5178 7.3953 10.328 7.3953 10.0936C7.3953 9.85886 7.58562 9.66939 7.81949 9.66939H9.99244C10.3117 9.66939 10.5674 9.40357 10.5541 9.08373C10.5416 8.7803 10.2826 8.54502 9.97887 8.54502H8.32483C8.21285 8.42653 8.09012 8.31794 7.95862 8.22094C7.50644 7.88753 6.94765 7.69043 6.34276 7.69043C5.26731 7.69043 4.19724 8.36799 3.75354 9.27235L5.48874 12.2776H8.74364C9.38275 12.2776 10.0122 12.1141 10.5662 11.7954C10.7582 11.6851 10.9638 11.5525 11.1867 11.3924C12.1204 10.7216 14.0295 9.32806 14.031 9.32721C14.2979 9.13548 14.3584 8.76333 14.1661 8.49666Z"
-                                            fill="currentcolor"
-                                        />
-                                    </svg>
-                                </figure>
-                                <p class="lower-box__title">Income</p>
-                                <p class="lower-box__money">$1250</p>
+                                    </figure>
+                                    <h3 class="testimonial__name">Alastair Cook</h3>
+                                    <p class="testimonial__job">Businessmen</p>
+                                </div>
                             </div>
+
+                            <!-- Item 4 -->
+                            <div class="testimonial__item">
+                                <div class="testimonial-box">
+                                    <blockquote class="testimonial-box__message">
+                                        Fantastic platform for online banking. The best online
+                                        banking platform I have used. Payments, loans, and money
+                                        transfers have never been so much easier before. I am very
+                                        much happy about this great online bank.
+                                    </blockquote>
+                                    <div class="testimonial-box__triangle"></div>
+                                </div>
+                                <div class="testimonial__profile">
+                                    <figure class="testimonial__media">
+                                        <img
+                                            src="assets/img/reviewer/review-2.png"
+                                            alt=""
+                                            class="testimonial__avatar"
+                                        />
+                                    </figure>
+                                    <h3 class="testimonial__name">Alastair Cook</h3>
+                                    <p class="testimonial__job">Businessmen</p>
+                                </div>
+                            </div>
+
+                            <!-- Item 5 -->
+                            <div class="testimonial__item">
+                                <div class="testimonial-box">
+                                    <blockquote class="testimonial-box__message">
+                                        Fantastic platform for online banking. The best online
+                                        banking platform I have used. Payments, loans, and money
+                                        transfers have never been so much easier before. I am very
+                                        much happy about this great online bank.
+                                    </blockquote>
+                                    <div class="testimonial-box__triangle"></div>
+                                </div>
+                                <div class="testimonial__profile">
+                                    <figure class="testimonial__media">
+                                        <img
+                                            src="assets/img/reviewer/review-1.png"
+                                            alt=""
+                                            class="testimonial__avatar"
+                                        />
+                                    </figure>
+                                    <h3 class="testimonial__name">Alastair Cook</h3>
+                                    <p class="testimonial__job">Businessmen</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-control">
+                            <span
+                                class="testimonial-control__block testimonial-control--active"
+                            ></span>
+                            <span class="testimonial-control__block"></span>
+                            <span class="testimonial-control__block"></span>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </main>
 
-        <!-- method -->
-        <section class="method">
-            <div class="container">
-                <div class="method__inner">
-                    <figure class="method__media">
-                        <img
-                            src="./assets/img/one-method.png"
-                            alt=""
-                            class="method__img"
-                        />
-                        <div class="method__cash">
-                            <img
-                                src="./assets/img/icon/cash.svg"
-                                alt=""
-                                class="method__cash-icon"
-                            />
-                        </div>
-                        <div class="method__board">
-                            <h3 class="board__title">Choose payment method:</h3>
-                            <div class="method__group">
-                                <div class="method__item">
-                                    <img
-                                        src="./assets/img/icon/payment-method-1.svg"
-                                        alt=""
-                                        class="method__icon-payment"
-                                    />
-                                </div>
-                                <div class="method__item">
-                                    <img
-                                        src="./assets/img/icon/payment-method-2.svg"
-                                        alt=""
-                                        class="method__icon-payment"
-                                    />
-                                </div>
-                                <div class="method__item">
-                                    <img
-                                        src="./assets/img/icon/payment-method-3.svg"
-                                        alt=""
-                                        class="method__icon-payment"
-                                    />
-                                </div>
-                                <div class="method__item">
-                                    <img
-                                        src="./assets/img/icon/payment-method-4.svg"
-                                        alt=""
-                                        class="method__icon-payment"
-                                    />
-                                </div>
-                                <div class="method__item">
-                                    <img
-                                        src="./assets/img/icon/payment-method-5.svg"
-                                        alt=""
-                                        class="method__icon-payment"
-                                    />
-                                </div>
-                                <div class="method__item method__add-item">
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="15"
-                                        height="15"
-                                        viewBox="0 0 15 15"
-                                        fill="none"
-                                    >
-                                        <path
-                                            d="M8.5 0H6.5V6.5H0V8.5H6.5V15H8.5V8.5H15V6.5H8.5V0Z"
-                                            fill="currentcolor"
-                                        />
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </figure>
-                    <section class="feature__content">
-                        <p class="section__tag">Digital Smart Wallet</p>
-                        <h2 class="section__heading feature__heading">
-                            Transfer and Deposit Your Money Anytime
-                        </h2>
-                        <p class="feature__desc">
-                            We bring together everything that’s required to build websites and apps
-                            that accept payments and send payouts globally. We are the best
-                            platform.
-                        </p>
-                        <ul class="content-list feature__list">
-                            <li class="content-item">Powerful App</li>
-                            <li class="content-item">Transparency And Speed</li>
-                            <li class="content-item">Multiple Use Capabilities</li>
-                        </ul>
-                        <button class="btn feature__btn">Get Started</button>
-                    </section>
-                </div>
-            </div>
-        </section>
         <!-- Animation -->
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
