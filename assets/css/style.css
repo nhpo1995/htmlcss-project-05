@@ -107,6 +107,107 @@ a {
     font-weight: 700;
     line-height: 1.25;
 }
+
+/* visa card */
+.visa-card {
+    position: relative;
+    width: 250px;
+    height: 150px;
+    border-radius: 20px;
+    background: linear-gradient(76deg, #8679e4 11.52%, #7264d6 70.78%);
+    padding: 16px;
+    color: #fff;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.visa-card.visa-card--large {
+    width: 482px;
+    height: 322px;
+    padding: 38px;
+}
+
+.card__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.card-text {
+    color: inherit;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.visa-card--large .card-text {
+    font-size: 2.4rem;
+}
+
+.visa__balance {
+    color: inherit;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-top: -2px;
+    line-height: normal;
+}
+
+.visa-card--large .visa__balance {
+    font-size: 3.2rem;
+    margin-top: -6px;
+}
+
+.visa-info {
+    display: grid;
+    grid-template-columns: 26.7% auto;
+    column-gap: 12px;
+    row-gap: 5px;
+    align-content: flex-start;
+    margin-top: 32px;
+}
+
+.visa-card--large .visa-info {
+    grid-template-columns: 28% auto;
+    column-gap: 26px;
+    row-gap: 5px;
+    margin-top: 98px;
+}
+
+.visa-info__title {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.visa-card--large .visa-info__title {
+    font-size: 2rem;
+}
+
+.visa-info__desc {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.visa-card--large .visa-info__desc {
+    font-size: 2.2rem;
+}
+
+.visa__decor {
+    position: absolute;
+    z-index: -1;
+}
+
+.visa__decor--left {
+    top: 0;
+    left: 0;
+}
+
+.visa__decor--right {
+    bottom: 0;
+    right: 0;
+}
+
 /*================= Header ==================*/
 .header {
     margin-top: 34px;
@@ -294,77 +395,6 @@ a {
     background-color: #fff;
     padding: 40px 11px 35px;
     position: relative;
-}
-
-/* card */
-.visa-card {
-    position: relative;
-    width: 250px;
-    height: 150px;
-    border-radius: 20px;
-    background: linear-gradient(76deg, #8679e4 11.52%, #7264d6 70.78%);
-    padding: 16px;
-    color: #fff;
-    overflow: hidden;
-    z-index: 0;
-}
-
-.card__header {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.card-text {
-    color: inherit;
-    font-size: 1.4rem;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.visa__balance {
-    color: inherit;
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-top: -2px;
-    line-height: normal;
-}
-
-.visa-info {
-    display: grid;
-    grid-template-columns: 26.7% auto;
-    column-gap: 12px;
-    row-gap: 5px;
-    align-content: flex-start;
-    margin-top: 32px;
-}
-
-.visa-info__title {
-    font-size: 1rem;
-    font-weight: 400;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.visa-info__desc {
-    font-size: 1.2rem;
-    font-weight: 600;
-    line-height: normal;
-}
-
-.visa__decor {
-    position: absolute;
-    z-index: -1;
-}
-
-.visa__decor--left {
-    top: 0;
-    left: 0;
-}
-
-.visa__decor--right {
-    bottom: 0;
-    right: 0;
 }
 
 /* phone Wrap up */
@@ -614,7 +644,6 @@ a {
 
 .work-list {
     counter-reset: step;
-    list-style: none;
     margin-top: 70px;
 }
 
@@ -626,6 +655,10 @@ a {
     counter-increment: step;
     position: relative;
     text-indent: 24px;
+    color: #212832;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.45;
 }
 
 .work-item__title::before {
@@ -634,13 +667,6 @@ a {
     left: -24px;
     top: 0;
 
-    color: #212832;
-    font-size: 2.2rem;
-    font-weight: 600;
-    line-height: 1.45;
-}
-
-.work-item__title {
     color: #212832;
     font-size: 2.2rem;
     font-weight: 600;
@@ -658,4 +684,14 @@ a {
 .work-item__title,
 .work-item__desc {
     width: 471px;
+}
+
+/*================= One card ==================*/
+.one-card {
+    padding: 80px 0;
+}
+
+.one-card__inner {
+    display: flex;
+    column-gap: 130px;
 }
