@@ -394,7 +394,7 @@ button.btn {
 .hero__input {
     flex-shrink: 0;
     flex: 1;
-    color: #696d76;
+    color: var(--primary-color);
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.67;
@@ -434,6 +434,7 @@ button.btn {
 .phone {
     position: relative;
     z-index: 0;
+    user-select: none;
 }
 
 .phone::before {
@@ -649,6 +650,7 @@ button.btn {
     background: url(../img/how-it-work-bg.png) no-repeat bottom center / contain;
     padding: 0px 7px;
     position: relative;
+    user-select: none;
 }
 
 .work__img {
@@ -760,6 +762,7 @@ button.btn {
 }
 /*one card media */
 .one-card__media {
+    user-select: none;
     margin-top: 86px;
 }
 
@@ -885,6 +888,7 @@ button.btn {
     padding: 0px 28px;
     position: relative;
     z-index: 0;
+    user-select: none;
 }
 
 .method__img {
@@ -935,6 +939,7 @@ button.btn {
 }
 
 .method__item {
+    /* display: block; */
     width: 63px;
     height: 48px;
     border-radius: 4px;
@@ -944,9 +949,21 @@ button.btn {
     align-items: center;
 }
 
+.method__item:hover .method__icon-payment {
+    transform: scale(1.1);
+}
+
 .method__add-item {
     background-color: #f9ea63;
     color: #212832;
+}
+
+.method__add-item:hover {
+    opacity: 0.9;
+}
+
+..method__icon-payment {
+    transition: transform 0.25s ease;
 }
 
 /*================= testimonial ==================*/
@@ -1302,7 +1319,7 @@ button.btn {
 }
 
 .footer__link-holder {
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
 .footer__link {
@@ -1322,6 +1339,7 @@ button.btn {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.67;
+    max-width: 371px;
 }
 
 .footer__topic--lower {
@@ -1342,24 +1360,43 @@ button.btn {
     padding: 12px;
     outline: none;
     color: var(--primary-color);
+    background-color: transparent;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.67;
 }
 
 .footer__input::placeholder {
-    color: #8e919a;
+    color: #8e919ab3;
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.75;
 }
 
+/* Ghi đè autofill */
+input:-webkit-autofill {
+    -webkit-text-fill-color: var(--primary-color) !important;
+    transition: background-color 9999s ease-out, color 9999s ease-out;
+    -webkit-box-shadow: 0 0 0 1000px #fff inset;
+}
+
 .footer__bottom-link {
+    position: relative;
     color: #6a6e78;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.67;
-    text-decoration: underline;
+}
+
+.footer__bottom-link::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #6a6e78;
 }
 
 .footer__phone {
