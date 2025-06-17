@@ -79,6 +79,10 @@
         <!-- Animation -->
         <link
             rel="stylesheet"
+            href="assets/css/animation.css"
+        />
+        <link
+            rel="stylesheet"
             href="https://unpkg.com/aos@next/dist/aos.css"
         />
         <title>Celo Bank</title>
@@ -187,6 +191,7 @@
                                     type="email"
                                     class="hero__input"
                                     placeholder="Your email address"
+                                    required
                                 />
                                 <button class="btn btn--primary hero__btn">Get Started</button>
                             </form>
@@ -469,7 +474,10 @@
                             <h2 class="section__heading work__heading"> How It Works </h2>
                             <ol class="work-list">
                                 <!-- Item 1 -->
-                                <li class="work-item">
+                                <li
+                                    class="work-item"
+                                    data-aos="fade-left"
+                                >
                                     <h3 class="work-item__title">
                                         Open a High Interest Checking account
                                     </h3>
@@ -480,7 +488,11 @@
                                 </li>
 
                                 <!-- Item 2 -->
-                                <li class="work-item">
+                                <li
+                                    class="work-item"
+                                    data-aos="fade-left"
+                                    data-aos-delay="50"
+                                >
                                     <h3 class="work-item__title">
                                         10 point-of-sale transactions each Month that are at least
                                         $10 each.
@@ -490,7 +502,11 @@
                                         possible in order to accrue APY
                                     </p>
                                 </li>
-                                <li class="work-item">
+                                <li
+                                    class="work-item"
+                                    data-aos="fade-left"
+                                    data-aos-delay="150"
+                                >
                                     <h3 class="work-item__title"> Receive up to 5.50% APY </h3>
                                     <p class="work-item__desc">
                                         The APY you earn will be based on your account balance and
@@ -521,9 +537,24 @@
                                 platform.
                             </p>
                             <ul class="content-list feature__list">
-                                <li class="content-item">Global Payments</li>
-                                <li class="content-item">One-Click Purchase</li>
-                                <li class="content-item">Friendly Price</li>
+                                <li
+                                    class="content-item"
+                                    data-aos="fade-right"
+                                >
+                                    Global Payments
+                                </li>
+                                <li
+                                    class="content-item"
+                                    data-aos="fade-right"
+                                >
+                                    One-Click Purchase
+                                </li>
+                                <li
+                                    class="content-item"
+                                    data-aos="fade-right"
+                                >
+                                    Friendly Price
+                                </li>
                             </ul>
                             <button class="btn feature__btn">Get Started</button>
                         </section>
@@ -727,9 +758,24 @@
                                 platform.
                             </p>
                             <ul class="content-list feature__list">
-                                <li class="content-item">Powerful App</li>
-                                <li class="content-item">Transparency And Speed</li>
-                                <li class="content-item">Multiple Use Capabilities</li>
+                                <li
+                                    class="content-item"
+                                    data-aos="fade-left"
+                                >
+                                    Powerful App
+                                </li>
+                                <li
+                                    class="content-item"
+                                    data-aos="fade-left"
+                                >
+                                    Transparency And Speed
+                                </li>
+                                <li
+                                    class="content-item"
+                                    data-aos="fade-left"
+                                >
+                                    Multiple Use Capabilities
+                                </li>
                             </ul>
                             <button class="btn feature__btn">Get Started</button>
                         </section>
@@ -746,8 +792,17 @@
                     <div class="testimonial__inner">
                         <div class="testimonial__content">
                             <p class="section__tag testimonial__tag">Our Testimonial</p>
-                            <h2 class="section__heading testimonial__heading">What Clients Says</h2>
-                            <p class="testimonial__desc">
+                            <h2
+                                class="section__heading testimonial__heading"
+                                data-aos="fade-up"
+                            >
+                                What Clients Says
+                            </h2>
+                            <p
+                                class="testimonial__desc"
+                                data-aos="fade-right"
+                                data-aos-duration="6000"
+                            >
                                 Read what clients says about us and about our online banking
                                 services that may inspire you
                             </p>
@@ -1360,6 +1415,7 @@
                                         id="email"
                                         class="footer__input"
                                         placeholder="Email address..."
+                                        required
                                     />
                                     <button
                                         type="submit"

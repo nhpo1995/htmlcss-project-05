@@ -389,6 +389,11 @@ button.btn {
     align-items: center;
     margin-top: 40px;
     padding: 0px 8px 0 23px;
+    transition: box-shadow 0.3s ease;
+}
+
+.hero__submit:focus-within {
+    outline: 2px solid var(--primary-color);
 }
 
 .hero__input {
@@ -433,8 +438,25 @@ button.btn {
 
 .phone {
     position: relative;
-    z-index: 0;
     user-select: none;
+    transition: transform 0.5s ease-in-out;
+    z-index: 0;
+}
+
+.phone:hover .phone__frame {
+    transform: scale(1.1);
+}
+
+.phone:hover::before {
+    transform: translateX(-50%) scale(1.1) translateY(-24px);
+}
+
+.phone:hover .phone__deposit {
+    transform: translateX(-40%) translateY(20%);
+}
+
+.phone:hover .phone__secure-fund {
+    transform: translateX(40%) translateY(-20%);
 }
 
 .phone::before {
@@ -449,6 +471,7 @@ button.btn {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
+    transition: transform 0.5s ease-in-out;
 }
 
 .phone__frame {
@@ -459,6 +482,7 @@ button.btn {
     background-color: #fff;
     padding: 40px 11px 35px;
     position: relative;
+    transition: transform 0.5s ease-in-out;
 }
 
 /* phone Wrap up */
@@ -550,11 +574,20 @@ button.btn {
     align-items: center;
     justify-content: center;
     margin-top: 127px;
+    transition: transform 0.5s;
+}
+
+.media-interest:hover {
+}
+
+.media-interest:hover .media-interest__num,
+.media-interest:hover .media-interest__text {
 }
 
 .media-interest__text,
 .media-interest__num {
     color: #fff;
+    transition: transform 0.5s;
 }
 
 .media-interest__num {
@@ -570,6 +603,7 @@ button.btn {
 .phone__deposit,
 .phone__secure-fund {
     position: absolute;
+    transition: transform 0.6s ease-in;
 }
 
 .phone__deposit {
@@ -962,7 +996,7 @@ button.btn {
     opacity: 0.9;
 }
 
-..method__icon-payment {
+.method__icon-payment {
     transition: transform 0.25s ease;
 }
 
