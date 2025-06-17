@@ -1279,3 +1279,99 @@ button.btn {
     bottom: 49px;
     right: 166px;
 }
+
+/*================= footer ==================*/
+.footer-content {
+    background: #fafbff;
+    padding: 100px 0 28px;
+}
+
+.footer__row {
+    display: grid;
+    grid-template-columns: repeat(3, auto) 1fr;
+    column-gap: 163px;
+    margin-bottom: 54px;
+}
+
+.footer__topic {
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+    margin-bottom: 24px;
+}
+
+.footer__link-holder {
+    margin-top: 10px;
+}
+
+.footer__link {
+    display: block;
+    color: #6a6e78bf;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__address {
+    color: #6a6e78bf;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+.footer__topic--lower {
+    margin-top: 48px;
+}
+
+.footer__cta {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer__input {
+    width: 270px;
+    height: 52px;
+    border-radius: 6px;
+    border: 1px solid #8e919a;
+    padding: 12px;
+    outline: none;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+.footer__input::placeholder {
+    color: #8e919a;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.footer__bottom-link {
+    color: #6a6e78;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+    text-decoration: underline;
+}
+
+.footer__phone {
+    margin-left: 100px;
+}
+
+.footer__copy-right {
+    padding: 28px 0;
+    background: #7264d6;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
