@@ -67,6 +67,13 @@
             href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <!-- Link CSS -->
         <link
             rel="stylesheet"
@@ -75,6 +82,10 @@
         <link
             rel="stylesheet"
             href="./assets/css/style.css"
+        />
+        <link
+            rel="stylesheet"
+            href="./assets/css/responsive.css"
         />
         <!-- Animation -->
         <link
@@ -88,10 +99,87 @@
         <title>Celo Bank</title>
     </head>
     <body>
+        <div class="header-spacer"></div>
+
         <!-- Header -->
         <header class="header">
+            <input
+                type="checkbox"
+                id="menu-checkbox"
+                hidden
+            />
+            <label
+                for="menu-checkbox"
+                class="menu-overlay"
+            ></label>
+            <!--Mobile Nav bar -->
+            <nav class="mobile-navbar hide-on-pc">
+                <!--mobile Logo -->
+                <a
+                    href="#"
+                    class="mobile__logo--link"
+                >
+                    <img
+                        src="./assets/img/Logo.svg"
+                        alt="Celo Bank"
+                        type="image/svg+xml"
+                        fetchpriority="high"
+                        class="mobile__logo"
+                    />
+                </a>
+                <ul class="mobile-navbar__group">
+                    <li>
+                        <a
+                            href="#"
+                            class="mobile-navbar__link"
+                        >
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#work"
+                            class="mobile-navbar__link"
+                        >
+                            Products
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#one-card"
+                            class="mobile-navbar__link"
+                        >
+                            Features
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#blog"
+                            class="mobile-navbar__link"
+                        >
+                            Blog
+                        </a>
+                    </li>
+                </ul>
+            </nav>
             <div class="container">
                 <div class="header__inner">
+                    <label
+                        class="hide-on-pc"
+                        for="menu-checkbox"
+                    >
+                        <svg
+                            class="mobile-menu-icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                        >
+                            <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                fill="currentcolor"
+                                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
                     <!-- Logo -->
                     <a
                         href="#"
@@ -105,8 +193,8 @@
                             class="header__logo"
                         />
                     </a>
-                    <!-- Nav bar -->
-                    <nav class="nav-bar">
+                    <!--PC Nav bar -->
+                    <nav class="nav-bar show-on-pc">
                         <ul class="nav-bar__group">
                             <li>
                                 <a
@@ -144,7 +232,7 @@
                     </nav>
 
                     <!-- Header Cta -->
-                    <div class="header__cta">
+                    <div class="header__cta hide-on-mobile">
                         <a
                             href="#!"
                             class="header__login"
@@ -801,7 +889,6 @@
                             <p
                                 class="testimonial__desc"
                                 data-aos="fade-right"
-                                data-aos-duration="6000"
                             >
                                 Read what clients says about us and about our online banking
                                 services that may inspire you
@@ -1447,6 +1534,12 @@
         </footer>
 
         <!-- Animation -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+            integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
             AOS.init();
