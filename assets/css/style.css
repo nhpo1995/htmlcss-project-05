@@ -272,18 +272,14 @@ button.btn {
 }
 
 /*================= Header ==================*/
-.header-spacer {
-    height: 34px;
-    /* flex-shrink: 0; */
-}
+
 .header {
-    /* margin-top: 34px; */
+    margin-top: 34px;
     padding: 8px 0;
     position: sticky;
     top: 0;
     z-index: 1;
     background-color: #fff;
-    margin: 0;
 }
 
 .header__inner {
@@ -334,7 +330,7 @@ button.btn {
     position: absolute;
     inset: auto 24px 4px 24px;
     content: "";
-    width: 47px;
+    max-width: 47px;
     height: 1px;
     border-radius: 0.5px;
     background: #7264d6;
@@ -384,7 +380,7 @@ button.btn {
 }
 
 .hero__submit {
-    width: 540px;
+    max-width: 540px;
     height: 74px;
     border-radius: 8px;
     background: #fff;
@@ -580,13 +576,6 @@ button.btn {
     justify-content: center;
     margin-top: 127px;
     transition: transform 0.5s;
-}
-
-.media-interest:hover {
-}
-
-.media-interest:hover .media-interest__num,
-.media-interest:hover .media-interest__text {
 }
 
 .media-interest__text,
@@ -797,7 +786,8 @@ button.btn {
 
 .one-card__inner {
     display: flex;
-    column-gap: 130px;
+    /* column-gap: 130px; */
+    justify-content: space-between;
 }
 /*one card media */
 .one-card__media {
@@ -1015,7 +1005,7 @@ button.btn {
     align-items: center;
     column-gap: 30px;
     overflow: hidden;
-    padding: 2px 2px;
+    padding: 70px 2px 2px;
 }
 
 .testimonial__item {
@@ -1033,8 +1023,8 @@ button.btn {
 
 .testimonial__desc {
     text-align: center;
-    width: 435px;
-    margin: 18px auto 70px;
+    max-width: 435px;
+    margin: 18px auto;
     color: #696d76;
     font-size: 1.6rem;
     font-weight: 400;

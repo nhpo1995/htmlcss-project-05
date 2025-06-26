@@ -99,8 +99,6 @@
         <title>Celo Bank</title>
     </head>
     <body>
-        <div class="header-spacer"></div>
-
         <!-- Header -->
         <header class="header">
             <input
@@ -158,6 +156,22 @@
                             class="mobile-navbar__link"
                         >
                             Blog
+                        </a>
+                    </li>
+                    <li class="show-on-mobile mobile-navbar__separate">
+                        <a
+                            href="#!"
+                            class="mobile-navbar__link"
+                        >
+                            Sign In
+                        </a>
+                    </li>
+                    <li class="show-on-mobile">
+                        <a
+                            href="#!"
+                            class="mobile-navbar__link"
+                        >
+                            Sign Up
                         </a>
                     </li>
                 </ul>
@@ -259,6 +273,7 @@
             >
                 <div class="container">
                     <div class="hero__inner">
+                        <!-- content -->
                         <section class="hero__content">
                             <p class="section__tag">Digital Smart Wallet</p>
                             <h1 class="hero__heading"
@@ -281,13 +296,29 @@
                                     placeholder="Your email address"
                                     required
                                 />
-                                <button class="btn btn--primary hero__btn">Get Started</button>
+                                <button class="btn btn--primary hero__btn hide-on-mobile"
+                                    >Get Started</button
+                                >
+                                <button class="btn btn--primary hero__btn--mobile show-on-mobile">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512"
+                                        class="arrow__icon"
+                                    >
+                                        <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                                        <path
+                                            fill="currentcolor"
+                                            d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM294.6 151.2c-4.2-4.6-10.1-7.2-16.4-7.2C266 144 256 154 256 166.3l0 41.7-96 0c-17.7 0-32 14.3-32 32l0 32c0 17.7 14.3 32 32 32l96 0 0 41.7c0 12.3 10 22.3 22.3 22.3c6.2 0 12.1-2.6 16.4-7.2l84-91c3.5-3.8 5.4-8.7 5.4-13.9s-1.9-10.1-5.4-13.9l-84-91z"
+                                        />
+                                    </svg>
+                                </button>
                             </form>
                             <p class="hero__sub-desc">
                                 *We’ll respect the inbox and never share your email.
                             </p>
                         </section>
-                        <div class="hero__media">
+                        <!-- media -->
+                        <div class="hero__media show-on-pc">
                             <div class="phone">
                                 <!-- phone frame -->
                                 <div class="phone__frame">
@@ -532,7 +563,8 @@
             >
                 <div class="container">
                     <div class="work__inner">
-                        <figure class="work__media">
+                        <!-- Media -->
+                        <figure class="work__media show-on-pc">
                             <img
                                 src="./assets/img/how-it-work.png"
                                 alt=""
@@ -557,6 +589,8 @@
                                 </div>
                             </div>
                         </figure>
+
+                        <!-- Content -->
                         <section class="work__content">
                             <p class="section__tag">Digital Smart Wallet</p>
                             <h2 class="section__heading work__heading"> How It Works </h2>
@@ -564,7 +598,9 @@
                                 <!-- Item 1 -->
                                 <li
                                     class="work-item"
-                                    data-aos="fade-left"
+                                    data-aos="fade-up"
+                                    data-aos-offset="300"
+                                    data-aos-easing="ease-in-sine"
                                 >
                                     <h3 class="work-item__title">
                                         Open a High Interest Checking account
@@ -578,8 +614,9 @@
                                 <!-- Item 2 -->
                                 <li
                                     class="work-item"
-                                    data-aos="fade-left"
-                                    data-aos-delay="50"
+                                    data-aos="fade-up"
+                                    data-aos-offset="300"
+                                    data-aos-easing="ease-in-sine"
                                 >
                                     <h3 class="work-item__title">
                                         10 point-of-sale transactions each Month that are at least
@@ -592,8 +629,9 @@
                                 </li>
                                 <li
                                     class="work-item"
-                                    data-aos="fade-left"
-                                    data-aos-delay="150"
+                                    data-aos="fade-up"
+                                    data-aos-offset="300"
+                                    data-aos-easing="ease-in-sine"
                                 >
                                     <h3 class="work-item__title"> Receive up to 5.50% APY </h3>
                                     <p class="work-item__desc">
@@ -614,6 +652,7 @@
             >
                 <div class="container">
                     <div class="one-card__inner">
+                        <!-- Content -->
                         <section class="feature__content">
                             <p class="section__tag">Digital Smart Wallet</p>
                             <h2 class="section__heading feature__heading">
@@ -627,19 +666,27 @@
                             <ul class="content-list feature__list">
                                 <li
                                     class="content-item"
-                                    data-aos="fade-right"
+                                    data-aos="fade-up"
+                                    data-aos-offset="200"
+                                    data-aos-easing="ease-in-sine"
                                 >
                                     Global Payments
                                 </li>
                                 <li
                                     class="content-item"
-                                    data-aos="fade-right"
+                                    data-aos="fade-up"
+                                    data-aos-offset="200"
+                                    data-aos-easing="ease-in-sine"
+                                    data-aos-delay="100"
                                 >
                                     One-Click Purchase
                                 </li>
                                 <li
                                     class="content-item"
-                                    data-aos="fade-right"
+                                    data-aos="fade-up"
+                                    data-aos-offset="200"
+                                    data-aos-easing="ease-in-sine"
+                                    data-aos-delay="200"
                                 >
                                     Friendly Price
                                 </li>
@@ -647,7 +694,7 @@
                             <button class="btn feature__btn">Get Started</button>
                         </section>
                         <!-- media -->
-                        <div class="one-card__media">
+                        <div class="one-card__media show-on-pc">
                             <!-- visa card -->
                             <div class="one-card__visa-wrap">
                                 <div class="visa-card visa-card--large">
@@ -749,7 +796,8 @@
             >
                 <div class="container">
                     <div class="method__inner">
-                        <figure class="method__media">
+                        <!-- Media -->
+                        <figure class="method__media show-on-pc">
                             <img
                                 src="./assets/img/one-method.png"
                                 alt=""
@@ -835,6 +883,7 @@
                                 </div>
                             </div>
                         </figure>
+                        <!-- Content -->
                         <section class="feature__content">
                             <p class="section__tag">Digital Smart Wallet</p>
                             <h2 class="section__heading feature__heading">
@@ -848,19 +897,25 @@
                             <ul class="content-list feature__list">
                                 <li
                                     class="content-item"
-                                    data-aos="fade-left"
+                                    data-aos="fade-up"
+                                    data-aos-offset="200"
+                                    data-aos-easing="ease-in-sine"
                                 >
                                     Powerful App
                                 </li>
                                 <li
                                     class="content-item"
-                                    data-aos="fade-left"
+                                    data-aos="fade-up"
+                                    data-aos-offset="200"
+                                    data-aos-easing="ease-in-sine"
                                 >
                                     Transparency And Speed
                                 </li>
                                 <li
                                     class="content-item"
-                                    data-aos="fade-left"
+                                    data-aos="fade-up"
+                                    data-aos-offset="200"
+                                    data-aos-easing="ease-in-sine"
                                 >
                                     Multiple Use Capabilities
                                 </li>
