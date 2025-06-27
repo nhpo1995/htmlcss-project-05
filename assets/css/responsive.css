@@ -298,6 +298,10 @@
         padding: 30px;
     }
 
+    .hero__input {
+        max-width: 75%;
+    }
+
     .hero__btn--mobile {
         color: #fff;
         display: flex;
@@ -460,5 +464,9 @@
 @media screen and (max-width: 575.98px) {
     .hide-on-mobile {
         display: none;
+    }
+
+    .hero__btn--mobile {
+        width: 200px;
     }
 }
